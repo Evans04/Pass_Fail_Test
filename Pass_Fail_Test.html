@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pass or Fail Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #cfe2f3; /* Light blue */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .message-container {
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #ffffff; /* White */
+        }
+        
+        h2 {
+            color: green;
+        }
+        
+        .fail {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<div class="message-container">
+    <h2>Pass or Fail Test</h2>
+    <script>
+        // Prompt the user to enter the score
+        var score = parseFloat(prompt("Enter the score:"));
+
+        // Check if the score is pass or fail
+        if (score >= 50) {
+            document.write('<p>The score ' + score + ' is a <strong>pass</strong>.</p>');
+        } else {
+            document.write('<p class="fail">The score ' + score + ' is a <strong>fail</strong>.</p>');
+        }
+    </script>
+</div>
+
+</body>
+</html>
